@@ -1,0 +1,57 @@
+---
+id: custom-html-and-mdx
+title: Verify Simulation Results
+sidebar_label: Verify Simulation Results
+sidebar_position: 2
+description: Learn how to check packet transmission and reception in a GTS Ethernet IP simulation.
+tags: [ethernet, verification]
+---
+
+
+# Verify Simulation Results
+
+## Objective
+
+Verify that the GTS Ethernet Hard IP design successfully transmits and receives Ethernet packets during simulation.
+
+## Before You Begin
+
+Ensure that you have generated the GTS Ethernet Hard IP design example and run the simulation using a supported simulator.
+
+## Procedure
+
+1. Open the simulation output.
+2. Verify that the transmit and receive paths are ready.
+3. Review the transmitted and received packet counters.
+4. Check the packet error counters.
+5. Confirm that the testbench completes successfully.
+
+## Expected Results
+
+The following table shows the expected results for the MAC mode simulation example.
+
+| Verification Item | Expected Result |
+| --- | --- |
+| TX path | Ready |
+| RX path | Ready |
+| Transmitted packets | 16 |
+| Received packets | 16 |
+| Packet errors | 0 |
+
+A successful simulation ends with the following message:
+
+```text
+Testbench complete
+```
+
+:::tip
+Compare the transmitted and received packet counts to identify potential data transfer issues.
+:::
+
+:::note
+Simulation results may vary depending on the selected IP configuration and design example.
+:::
+
+## Next Steps
+
+If the simulation results do not match the expected results, review the IP configuration and simulation settings.
