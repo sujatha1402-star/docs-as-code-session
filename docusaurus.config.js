@@ -10,17 +10,13 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-    future: {
-    experimental_faster: false,
-  },
-  title: 'Ethernet IP Documentation Hub',
-  tagline: 'Configure, Simulate, and Verify FPGA Ethernet IP',
-  favicon: 'img/favicon.ico',
-
-  // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
-  future: {
-    v4: true, // Improve compatibility with the upcoming Docusaurus v4
-  },
+future: {
+  faster: false,
+  v4: true,
+},
+title: 'Ethernet IP Documentation Hub',
+tagline: 'Configure, Simulate, and Verify FPGA Ethernet IP',
+favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
   url: 'https://sujatha1402-star.github.io',
